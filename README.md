@@ -27,7 +27,7 @@ Or you can use `$_FILES['filename']['tmp_name']` as source.
 $img = new SimpleImageCropper($_FILE['filename']['tmp_name']);
 ```
 
-When initializing the class you will have access to some of the images properties.
+When initializing the class you will have access to some of the image properties.
 
 Properties:
 
@@ -38,7 +38,7 @@ Properties:
 
 ### Crop and save image
 
-Croping the image in center and saving the new image.
+Cropping the image in center and saving the new image.
 
 ```php
 $width = 150;
