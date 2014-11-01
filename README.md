@@ -21,7 +21,7 @@ $img = new SimpleImageCropper('http://upload.wikimedia.org/wikipedia/commons/b/b
 
 ```
 
-Or you can use `$_FILE['filename']['tmp_name']` as source.
+Or you can use `$_FILES['filename']['tmp_name']` as source.
 
 ```php
 $img = new SimpleImageCropper($_FILE['filename']['tmp_name']);
@@ -113,7 +113,7 @@ print_r($img->crop(200, 200));
 ### Resize image and keep the proportions
 
 ```php
-$img = new SimpleImageCropper($_FILE['filename']['tmp_name']);
+$img = new SimpleImageCropper($_FILES['filename']['tmp_name']);
 
 // Set the new width
 $new_width = 306;
