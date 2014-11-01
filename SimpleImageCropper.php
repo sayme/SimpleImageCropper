@@ -117,14 +117,14 @@ class SimpleImageCropper {
 		$thumb_aspect = $thumb_width / $thumb_height;
 
 		if ($original_aspect >= $thumb_aspect) {
-		   // If image is wider than thumbnail (in aspect ratio sense)
-		   $new_height = $thumb_height;
-		   $new_width = $this->width / ($this->height / $thumb_height);
+			// If image is wider than thumbnail (in aspect ratio sense)
+			$new_height = $thumb_height;
+			$new_width = $this->width / ($this->height / $thumb_height);
 		}
 		else {
-		   // If the thumbnail is wider than the image
-		   $new_width = $thumb_width;
-		   $new_height = $this->height / ($this->width / $thumb_width);
+			// If the thumbnail is wider than the image
+			$new_width = $thumb_width;
+			$new_height = $this->height / ($this->width / $thumb_width);
 		}
 
 		imagecopyresampled($temp,
@@ -137,9 +137,9 @@ class SimpleImageCropper {
 
 		if($data) {
 			ob_start(); // start output buffer
-		    $this->imageall($temp);
-		    $output = ob_get_clean(); // clean output buffer and set $output as output
-		    return $output;
+			$this->imageall($temp);
+			$output = ob_get_clean(); // clean output buffer and set $output as output
+			return $output;
 		}
 		else {
 			$this->image = $temp;
