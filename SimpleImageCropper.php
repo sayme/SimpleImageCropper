@@ -10,7 +10,6 @@
  * @version 1.0
  * @copyright (c) 2014, Sami Piirainen.
  * @license	http://opensource.org/licenses/MIT	MIT License
- * @link 
  */
 
 class SimpleImageCropper {
