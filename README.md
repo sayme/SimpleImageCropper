@@ -3,7 +3,7 @@ SimpleImageCropper
 
 SimpleImageCropper (v1.0)
 
-A very light weight php library for cropping and resizing images.
+A light weight php library for cropping and resizing images.
 
 
 
