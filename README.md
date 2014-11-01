@@ -106,7 +106,7 @@ require 'SimpleImageCropper.php';
 $img = new SimpleImageCropper('http://upload.wikimedia.org/wikipedia/commons/b/b5/Navionics_Apple_Team.png');
 
 // Crop the image by 200x200 and output it.
-print_r($img->crop(200, 200));
+print_r($img->crop(200, 200, true));
 
 ```
 
