@@ -17,7 +17,7 @@ Initialize SimpleImageCropper with URL as image source.
 
 require 'path/to/SimpleImageCropper.php';
 
-$img = new SimpleImageCropper('http://www.queness.com/resources/images/png/apple_ex.png');
+$img = new SimpleImageCropper('http://upload.wikimedia.org/wikipedia/commons/b/b5/Navionics_Apple_Team.png');
 
 ```
 
@@ -86,7 +86,7 @@ $img->crop($width, $height, false, $color['r'], $color['g'], $color['b']);
 ```php
 require 'SimpleImageCropper.php';
 
-$img = new SimpleImageCropper('http://www.queness.com/resources/images/png/apple_ex.png');
+$img = new SimpleImageCropper('http://upload.wikimedia.org/wikipedia/commons/b/b5/Navionics_Apple_Team.png');
 
 // Crop the image by 200x200
 $img->crop(200, 200);
@@ -103,7 +103,7 @@ header('Content-Type: image/png');
 
 require 'SimpleImageCropper.php';
 
-$img = new SimpleImageCropper('http://www.queness.com/resources/images/png/apple_ex.png');
+$img = new SimpleImageCropper('http://upload.wikimedia.org/wikipedia/commons/b/b5/Navionics_Apple_Team.png');
 
 // Crop the image by 200x200 and output it.
 print_r($img->crop(200, 200));
