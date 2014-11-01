@@ -110,3 +110,23 @@ print_r($img->crop(200, 200));
 
 ```
 
+### Resize image and keep the proportions
+
+```php
+$img = new SimpleImageCropper($_FILE['filename']['tmp_name']);
+
+// Set the new width
+$new_width = 306;
+
+// Check proportions
+$proportion = $new_width / $img->width;
+
+// Set the new height
+$new_height = $img->height * $proportion;
+
+// Crop the image by its new width and height
+$img->crop($new_width, $new_height);
+
+// Save the image with a 50% quality
+$img->save('mynewimage.png', 50);
+```
