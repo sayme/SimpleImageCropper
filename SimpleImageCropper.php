@@ -12,7 +12,6 @@
  * @license	http://opensource.org/licenses/MIT	MIT License
  * @link	https://github.com/sayme/SimpleImageCropper/
  */
-
 class SimpleImageCropper {
 	/**
 	 * @var int
@@ -69,7 +68,8 @@ class SimpleImageCropper {
 	}
 
 	/**
-	 * do image* 
+	 * Do image* 
+	 *
 	 * @param resource $image
 	 * @param string $filename optional
 	 * @param int $quality optional
