@@ -64,9 +64,9 @@ print_r($img->crop($width, $height, true));
 
 ```
 
-### Color .png backgrounds
+### Color png backgrounds
 
-You can also set the background color of you pngs (RGB)
+You can also set the background color of your pngs (RGB)
 
 ```php
 
