@@ -47,7 +47,7 @@ class SimpleImageCropper {
 	}
 
 	/**
-	 * imagecreatefrom*
+	 * Imagecreatefrom*
 	 *	
 	 * @param $file resource
 	 * @param $type int
