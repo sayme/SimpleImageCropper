@@ -51,12 +51,12 @@ $img->save('mynewimage.png');
 
 // You can also set the quality of the image to be saved in the second parameter.
 // The quality is by default 75, you can set it to a quality between 0-100
-$img->save('mynewumage.png', 50); 
+$img->save('mynewumage.png', 50);
 ```
 
 ### Output image as BLOB
 
-You can also output your image as BLOB for saving it in your database or just outputing it directly.
+You can also output your image as BLOB for saving it in your database or just outputting it directly.
 
 ```php
 // By setting the third parameter as true, it will output the image as BLOB
@@ -76,7 +76,7 @@ $color = array(
 	'g' => 150,
 	'b' => 150
 );
-// Set the third paramter to false if you dont want it as a BLOB
+// Set the third parameter to false if you don't want it as a BLOB
 $img->crop($width, $height, false, $color['r'], $color['g'], $color['b']);
 ```
 
@@ -116,16 +116,16 @@ print_r($img->crop(200, 200, true));
 $img = new SimpleImageCropper($_FILES['filename']['tmp_name']);
 
 // Set the new width
-$new_width = 306;
+$newWidth = 306;
 
 // Check proportions
-$proportion = $new_width / $img->width;
+$proportion = $newWidth / $img->width;
 
 // Set the new height
-$new_height = $img->height * $proportion;
+$newHeight = $img->height * $proportion;
 
 // Crop the image by its new width and height
-$img->crop($new_width, $new_height);
+$img->crop($newWidth, $newHeight);
 
 // Save the image with a 50% quality
 $img->save('mynewimage.png', 50);

@@ -8,7 +8,7 @@
  *
  * @author		Sami Piirainen
  * @version		1.0
- * @copyright 	(c) 2014, Sami Piirainen.
+ * @copyright	(c) 2014, Sami Piirainen.
  * @license		http://opensource.org/licenses/MIT	MIT License
  * @link		https://github.com/sayme/SimpleImageCropper/
  */
