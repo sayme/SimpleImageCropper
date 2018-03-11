@@ -82,7 +82,7 @@ class Cropper
 
         if ($originalAspect >= $thumbAspect) {
             // If image is wider than thumbnail (in aspect ratio sense)
-            $thumbHeight = $thumbHeight;
+            $newHeight = $thumbHeight;
             $newWidth = $this->width / ($this->height / $thumbHeight);
         } else {
             // If the thumbnail is wider than the image
