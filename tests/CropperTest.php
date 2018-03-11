@@ -40,7 +40,7 @@ class CropperTest extends TestCase
         unlink($filename);
     }
 
-    public function getImages(): \Iterator
+    public function getImages(): iterable
     {
         yield [__DIR__.'/images/test.jpg', __DIR__.'/tmp/test.jpg', IMAGETYPE_JPEG];
         yield [__DIR__.'/images/test.png', __DIR__.'/tmp/test.png', IMAGETYPE_PNG];
