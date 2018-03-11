@@ -3,6 +3,8 @@ SimpleImageCropper
 
 A light weight php library for cropping and resizing images.
 
+[![Build Status](https://travis-ci.org/sayme/SimpleImageCropper.svg?branch=master)](https://travis-ci.org/sayme/SimpleImageCropper)
+
 ## Usage
 
 ### Download and install SimpleImageCropper
@@ -18,11 +20,9 @@ $ composer require sayme/simple-image-cropper
 Initialize SimpleImageCropper with URL as image source.
 
 ```php
-
 use SimpleImageCropper\Cropper;
 
 $cropper = new Cropper('http://example.com/your-image.png');
-
 ```
 
 Or you can use `$_FILES['filename']['tmp_name']` as source.
@@ -68,12 +68,11 @@ echo $cropper->getData();
 You can also set the background color of pngs (RGB)
 
 ```php
-
 // set the color
 $color = [
-	'r' => 150,
-	'g' => 150,
-	'b' => 150
+    'r' => 150,
+    'g' => 150,
+    'b' => 150
 ];
 
 $cropper->crop($width, $height, $color['r'], $color['g'], $color['b']);
