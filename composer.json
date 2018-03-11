@@ -1,0 +1,26 @@
+{
+    "name": "sayme/simple-image-cropper",
+    "description": "A light weight php library for cropping and resizing images.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sami Piirainen",
+            "email": "sami.spp@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "ext-gd": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0",
+        "friendsofphp/php-cs-fixer": "^2.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "SimpleImageCropper\\": "src/",
+            "Tests\\": "tests/"
+        }
+    }
+}
