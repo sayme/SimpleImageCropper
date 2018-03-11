@@ -113,7 +113,7 @@ class Cropper
      *
      * @return null|string
      */
-    public function getData(): string
+    public function getData(): ?string
     {
         if (!$this->image) {
             return null;
@@ -139,16 +139,31 @@ class Cropper
         imagedestroy($this->image);
     }
 
+    /**
+     * Get original image width.
+     *
+     * @return int
+     */
     public function getWidth(): int
     {
         return $this->width;
     }
 
+    /**
+     * Get original image height.
+     *
+     * @return int
+     */
     public function getHeight(): int
     {
         return $this->height;
     }
 
+    /**
+     * Get original image type.
+     *
+     * @return int
+     */
     public function getType(): int
     {
         return $this->type;
@@ -177,11 +192,11 @@ class Cropper
     /**
      * Do image*.
      *
-     * @param resource $image
-     * @param string   $filename
-     * @param int      $quality
+     * @param resource    $image
+     * @param null|string $filename
+     * @param int         $quality
      */
-    private function imageAll($image, string $filename = null, int $quality = 75): void
+    private function imageAll($image, ?string $filename = null, int $quality = 75): void
     {
         switch ($this->type) {
             case IMAGETYPE_GIF:
